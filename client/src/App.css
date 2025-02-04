@@ -29,6 +29,23 @@ header {
   grid-row: 1;
 }
 
+.programs {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0rem auto;
+}
+
+.program {
+  border: 1px solid white;
+  text-align: center;
+  color: rgb(219, 219, 219);
+  background: #212121a2;
+  img {
+    width: 40%;
+  }
+}
+
 .logo {
   font-size: larger;
 }
