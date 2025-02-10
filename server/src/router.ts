@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Router } from "express";
 
 const router = express.Router();
 
@@ -27,6 +27,12 @@ import programActions from "./modules/program/programActions";
 
 router.get("/api/programs", programActions.browse);
 
+router.get("/api/programs/:id", programActions.read);
+
 /* ************************************************************************* */
 
+import categoryActions from "./modules/category/categoryActions";
+
+router.get("/api/categories", categoryActions.films);
+router.get("/api/categories/:id", categoryActions.getCategory);
 export default router;
